@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Franklin Kuo — Engineering Portfolio</title>
+<meta name="description" content="Mechanical engineering at UC Berkeley. Avionics at Space Enterprise at Berkeley. Survey-to-Civil 3D alignment automation verified across 99 miles of track geometry.">
+<meta name="theme-color" content="#05070a">
+
+<meta property="og:title" content="Franklin Kuo — Engineering Portfolio">
+<meta property="og:description" content="Mechanical engineering at UC Berkeley. Avionics at Space Enterprise at Berkeley.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scroll-progress"><div class="scroll-progress__bar" id="scrollBar"></div></div>
+
+<nav class="nav" id="nav">
+  <a class="nav__mark" href="#top">FK</a>
+  <div class="nav__links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a class="nav__cta" href="assets/Franklin-Kuo-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <canvas class="hero__grid" id="heroGrid" aria-hidden="true"></canvas>
+  <div class="hero__vignette" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <div class="hero__eyebrow" data-reveal>
+      <span class="dot"></span>
+      <span>Mechanical Engineering &middot; UC Berkeley &middot; B.S. May 2029</span>
+    </div>
+
+    <h1 class="wordmark" aria-label="Franklin Kuo Engineering Portfolio">
+      <span class="wordmark__line" data-line="1">
+        <span class="ch">F</span><span class="ch">R</span><span class="ch">A</span><span class="ch">N</span><span class="ch">K</span><span class="ch">L</span><span class="ch">I</span><span class="ch">N</span>
+        <span class="ch sp">&nbsp;</span>
+        <span class="ch">K</span><span class="ch">U</span><span class="ch">O</span>
+      </span>
+      <span class="wordmark__line wordmark__line--sub" data-line="2">
+        <span class="ch">E</span><span class="ch">N</span><span class="ch">G</span><span class="ch">I</span><span class="ch">N</span><span class="ch">E</span><span class="ch">E</span><span class="ch">R</span><span class="ch">I</span><span class="ch">N</span><span class="ch">G</span>
+        <span class="ch sp">&nbsp;</span>
+        <span class="ch">P</span><span class="ch">O</span><span class="ch">R</span><span class="ch">T</span><span class="ch">F</span><span class="ch">O</span><span class="ch">L</span><span class="ch">I</span><span class="ch">O</span>
+      </span>
+      <span class="wordmark__sweep" aria-hidden="true"></span>
+    </h1>
+
+    <p class="hero__sub" data-reveal>
+      Avionics Engineer at <strong>Space Enterprise at Berkeley</strong>. I build systems that have to be
+      right the first time &mdash; and that say so honestly when they are not.
+    </p>
+
+    <div class="hero__actions" data-reveal>
+      <a class="btn btn--primary" href="#work">View the work<span class="btn__arrow">&rarr;</span></a>
+      <a class="btn btn--ghost" href="assets/Franklin-Kuo-Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+    </div>
+  </div>
+
+  <div class="hero__scrollcue" aria-hidden="true">
+    <span>SCROLL</span><div class="hero__scrollline"></div>
+  </div>
+</header>
+
+<!-- ============ MARQUEE STATS ============ -->
+<section class="statband" aria-label="Key results">
+  <div class="statband__inner">
+    <div class="stat" data-reveal>
+      <div class="stat__num" data-count="99.3" data-dec="1" data-suffix=" mi">0</div>
+      <div class="stat__label">Track geometry verified</div>
+    </div>
+    <div class="stat" data-reveal>
+      <div class="stat__num" data-count="100" data-dec="2" data-suffix="%">0</div>
+      <div class="stat__label">Best corridor, within 0.05 ft</div>
+    </div>
+    <div class="stat" data-reveal>
+      <div class="stat__num" data-count="11389" data-dec="0">0</div>
+      <div class="stat__label">Incident rows reconciled</div>
+    </div>
+    <div class="stat" data-reveal>
+      <div class="stat__num" data-count="6" data-dec="0">0</div>
+      <div class="stat__label">Tools shipped &amp; handed over</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<main id="work">
+
+  <section class="sectionhead">
+    <div class="sectionhead__inner" data-reveal>
+      <span class="kicker">01 &mdash; Selected work</span>
+      <h2>Engineering that grades itself.</h2>
+      <p>Two projects: a production automation suite delivered to a civil engineering firm,
+         and a structural occupant cell designed on a chassis team.</p>
+    </div>
+  </section>
+
+  <!-- ---- PROJECT 01: RSE SUITE ---- -->
+  <section class="project" id="p-rse">
+    <div class="project__sticky">
+      <div class="project__stickyinner">
+        <span class="project__index">PROJECT 01</span>
+        <h3 class="project__title">Survey&nbsp;&rarr;&nbsp;Civil&nbsp;3D<br>Automation Suite</h3>
+        <p class="project__role">Engineering Intern &middot; Civil engineering consultancy &middot; Summer 2026</p>
+        <ul class="project__meta">
+          <li><span>Stack</span><span>Python, LandXML, Civil 3D, Excel COM</span></li>
+          <li><span>Scope</span><span>6 tools, source + docs, full handover</span></li>
+          <li><span>Status</span><span>Delivered &amp; audited</span></li>
+        </ul>
+        <div class="project__viz" id="alignViz">
+          <svg viewBox="0 0 520 300" class="alignsvg" aria-hidden="true">
+            <defs>
+              <linearGradient id="gTrack" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#1b6ef3" stop-opacity="0"/>
+                <stop offset="18%" stop-color="#31a8ff" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#6ee7ff" stop-opacity="1"/>
+              </linearGradient>
+              <filter id="fGlow" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="4" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <g class="alignsvg__grid">
+              <path d="M0 60H520M0 120H520M0 180H520M0 240H520" />
+              <path d="M65 0V300M195 0V300M325 0V300M455 0V300" />
+            </g>
+            <!-- raw survey points -->
+            <g class="alignsvg__pts" id="alignPts"></g>
+            <!-- fitted geometry: tangent - spiral - curve - spiral - tangent -->
+            <path id="alignPath" class="alignsvg__path" filter="url(#fGlow)"
+              d="M20 250 L150 208 C210 188 250 150 262 116 C276 78 320 58 390 52 L500 46"/>
+            <g class="alignsvg__labels">
+              <text x="60" y="272">TANGENT</text>
+              <text x="212" y="168">SPIRAL</text>
+              <text x="268" y="96">CURVE</text>
+              <text x="418" y="38">TANGENT</text>
+            </g>
+          </svg>
+          <div class="alignsvg__cap"><span class="pill pill--pass">PASS</span> 100.00% of points within 0.05 ft</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project__scroll">
+      <div class="block" data-reveal>
+        <h4>The problem</h4>
+        <p>
+          Turning a raw survey point file into track geometry that Civil 3D will accept is slow, manual,
+          and unforgiving. An engineer separates the tracks by hand, fits tangents, curves and spirals by
+          eye, and has no systematic way to prove the result is within tolerance before it reaches design.
+        </p>
+      </div>
+
+      <div class="block" data-reveal>
+        <h4>What I built</h4>
+        <p>
+          A wizard-driven tool that takes a standard PNEZD export, separates the tracks, fits real
+          horizontal geometry, and writes a <strong>LandXML file that imports straight into Civil 3D</strong> —
+          alongside an Excel review report an engineer signs off: verdict tab, curve and PI table,
+          point-by-point ledger, and drawings.
+        </p>
+      </div>
+
+      <div class="block block--feature" data-reveal>
+        <h4>The part I am proudest of</h4>
+        <p>
+          It <strong>grades its own output and refuses to lie about it.</strong> Every run ends
+          <span class="pill pill--pass">PASS</span>, <span class="pill pill--draft">DRAFT</span>, or
+          <span class="pill pill--fail">NOT&nbsp;APPROVED</span> — and a failing file is renamed on disk so
+          it physically cannot be imported by accident.
+        </p>
+        <p>
+          The acceptance bar is stated verbatim in every report: <em>≥98% of points within 0.20 ft,
+          every miss flagged, zero kinks, XML round-trip validated.</em> A run that misses the bar says so
+          on the front page. That is the tool working, not the tool breaking.
+        </p>
+      </div>
+
+      <div class="block" data-reveal>
+        <h4>Verified results</h4>
+        <div class="table">
+          <div class="table__row table__row--head">
+            <span>Corridor</span><span>Length</span><span>Accuracy</span><span>Verdict</span>
+          </div>
+          <div class="table__row">
+            <span>Corridor A</span><span>46,350 ft</span><span class="mono hi">100.00% @ 0.05 ft</span><span class="pill pill--pass">PASS</span>
+          </div>
+          <div class="table__row">
+            <span>Corridor B</span><span>232,485 ft</span><span class="mono hi">99.52% @ 0.05 ft</span><span class="pill pill--pass">PASS</span>
+          </div>
+          <div class="table__row">
+            <span>Corridor C</span><span>43,388 ft</span><span class="mono">99.25% @ 0.20 ft</span><span class="pill pill--draft">DRAFT</span>
+          </div>
+          <div class="table__row">
+            <span>Corridor D</span><span>94,281 ft</span><span class="mono">94.54% @ 0.20 ft</span><span class="pill pill--fail">FAIL</span>
+          </div>
+        </div>
+        <p class="note">
+          Corridor D is an 18-mile street-running light rail line and the hardest case in the set. It is
+          on the site for the same reason it is in the handover document: the tool caught it, reported it,
+          and the remaining shortfall is written down as an open engineering item rather than quietly rounded away.
+        </p>
+      </div>
+
+      <div class="block" data-reveal>
+        <h4>Also in the suite</h4>
+        <div class="minicards">
+          <article class="minicard">
+            <h5>Incident Sorter</h5>
+            <p>Sorts raw grade-crossing incident reports into a 44-sheet matrix workbook, 28 categories per sheet.
+               An independent checker re-derives the result: <strong>11,389 rows reconcile.</strong></p>
+          </article>
+          <article class="minicard">
+            <h5>Gate Queue Sorter</h5>
+            <p>Files every train-observation row into the right crossing tab across 43 crossing sheets,
+               with a run log of exactly what went where.</p>
+          </article>
+          <article class="minicard">
+            <h5>Master Graph Creator</h5>
+            <p>Drives Excel itself to add three hourly charts to 43 workbooks without destroying the charts already
+               in them. Shipped 1.0.1 after I found a bug where it could close a user's other open workbooks —
+               now covered by six regression tests.</p>
+          </article>
+        </div>
+        <p class="note">Two further utilities &mdash; a volume converter and a file-usage tracker &mdash; round out the six-tool handover.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---- PROJECT 02: OCELL ---- -->
+  <section class="project project--alt" id="p-ocell">
+    <div class="project__sticky">
+      <div class="project__stickyinner">
+        <span class="project__index">PROJECT 02</span>
+        <h3 class="project__title">OCELL v21<br>Occupant Cell</h3>
+        <p class="project__role">Chassis team &middot; Occupant cell subteam &middot; SolidWorks</p>
+        <ul class="project__meta">
+          <li><span>Envelope</span><span class="mono">914.4 &times; 505.1 &times; 1666.6 mm</span></li>
+          <li><span>Mesh</span><span class="mono">2,917 triangles</span></li>
+          <li><span>Revision</span><span>v21 &mdash; straight-wall</span></li>
+        </ul>
+        <p class="project__hint">Drag the model to rotate &middot; scroll to advance</p>
+      </div>
+    </div>
+
+    <div class="project__scroll project__scroll--viewer">
+      <div class="viewer" id="viewer">
+        <canvas id="ocellCanvas"></canvas>
+        <div class="viewer__hud">
+          <div class="viewer__hudrow"><span>MODEL</span><span class="mono">OCELL_v21</span></div>
+          <div class="viewer__hudrow"><span>TRIS</span><span class="mono">2917</span></div>
+          <div class="viewer__hudrow"><span>WIDTH</span><span class="mono">914.40 mm</span></div>
+          <div class="viewer__hudrow"><span>HEIGHT</span><span class="mono">1666.60 mm</span></div>
+        </div>
+        <div class="viewer__loading" id="viewerLoading"><span>INITIALIZING GEOMETRY</span></div>
+        <button class="viewer__toggle" id="wireToggle" type="button">Wireframe</button>
+      </div>
+
+      <div class="block" data-reveal>
+        <h4>What it is</h4>
+        <p>
+          The occupant cell is the structure the driver sits inside — the volume that has to stay intact
+          when nothing else does. I designed this on the occupant cell subteam within our chassis team.
+        </p>
+      </div>
+
+      <div class="block" data-reveal>
+        <h4>The straight-wall revision</h4>
+        <p>
+          This is revision 21, the straight-wall attempt. The side walls were flattened from the previous
+          curved profile — a change that trades a small amount of formed stiffness for manufacturability
+          and a cleaner interface with the surrounding chassis members.
+        </p>
+      </div>
+
+      <div class="block" data-reveal>
+        <h4>Envelope</h4>
+        <p>
+          The cell measures <span class="mono hi">914.40 mm</span> across — exactly 36.00 inches, a driven
+          dimension rather than an accident of the loft — by <span class="mono">505.12 mm</span> deep and
+          <span class="mono">1666.60 mm</span> tall.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__left" data-reveal>
+        <span class="kicker">02 &mdash; About</span>
+        <h2>Franklin Kuo</h2>
+      </div>
+      <div class="about__right">
+        <p class="lede" data-reveal>
+          I am a sophomore mechanical engineering student at UC Berkeley and an
+          <strong>Avionics Engineer at Space Enterprise at Berkeley</strong>, where the goal is
+          hardware that survives flight rather than hardware that looks good on a slide.
+        </p>
+        <p data-reveal>
+          Most of what I have shipped so far sits at the seam between mechanical work and the software
+          that verifies it: geometry fitting, tolerance checking, and automation that tells an engineer
+          the truth about its own output. I care about work that is checkable — stated acceptance bars,
+          reproducible runs, and an honest list of what is still open.
+        </p>
+        <ul class="facts" data-reveal>
+          <li><span>Degree</span><span>B.S. Mechanical Engineering, UC Berkeley</span></li>
+          <li><span>Graduating</span><span>May 2029</span></li>
+          <li><span>Team</span><span>Space Enterprise at Berkeley &mdash; Avionics</span></li>
+          <li><span>Citizenship</span><span>U.S. Citizen</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills" id="skills">
+    <div class="skills__inner">
+      <div class="sectionhead__inner" data-reveal>
+        <span class="kicker">03 &mdash; Capabilities</span>
+        <h2>Tools I actually shipped with.</h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skillcol" data-reveal>
+          <h4>Design &amp; CAD</h4>
+          <ul><li>SolidWorks</li><li>Part &amp; assembly modeling</li><li>Design for manufacturability</li><li>Revision control on a team</li></ul>
+        </div>
+        <div class="skillcol" data-reveal>
+          <h4>Analysis &amp; Geometry</h4>
+          <ul><li>Horizontal alignment fitting</li><li>Tangents, arcs, clothoid spirals</li><li>Tolerance &amp; error distribution</li><li>Civil 3D / LandXML</li></ul>
+        </div>
+        <div class="skillcol" data-reveal>
+          <h4>Software</h4>
+          <ul><li>Python</li><li>Excel COM automation</li><li>Regression testing</li><li>Packaging &amp; handover docs</li></ul>
+        </div>
+        <div class="skillcol" data-reveal>
+          <h4>Engineering practice</h4>
+          <ul><li>Written acceptance criteria</li><li>Verification evidence runs</li><li>Open-items tracking</li><li>Technical documentation</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <span class="kicker" data-reveal>04 &mdash; Contact</span>
+      <h2 data-reveal>Let's build something<br>that has to work.</h2>
+      <div class="contact__links" data-reveal>
+        <a class="clink" href="mailto:franklinkuo@berkeley.edu">
+          <span class="clink__label">Email</span>
+          <span class="clink__val">franklinkuo@berkeley.edu</span>
+        </a>
+        <a class="clink" href="https://www.linkedin.com/in/franklinkuo/" target="_blank" rel="noopener">
+          <span class="clink__label">LinkedIn</span>
+          <span class="clink__val">/in/franklinkuo</span>
+        </a>
+        <a class="clink" href="https://github.com/f1kuo2020" target="_blank" rel="noopener">
+          <span class="clink__label">GitHub</span>
+          <span class="clink__val">@f1kuo2020</span>
+        </a>
+        <a class="clink" href="assets/Franklin-Kuo-Resume.pdf" target="_blank" rel="noopener">
+          <span class="clink__label">Résumé</span>
+          <span class="clink__val">PDF &darr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>&copy; <span id="year">2026</span> Franklin Kuo</span>
+  <span class="mono">UC BERKELEY &middot; MECHANICAL ENGINEERING &middot; B.S. MAY 2029</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/ocell-data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
